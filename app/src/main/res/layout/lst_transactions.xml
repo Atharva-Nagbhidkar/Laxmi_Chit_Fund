@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_transaction"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/deposit" />
+
+    <TextView
+        android:id="@+id/txt_transaction_type_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/img_transaction"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="TRANS_TYPE: TRANS_ID" />
+
+
+
+    <TextView
+        android:id="@+id/txt_transaction_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_transaction"
+        tools:text="TRANS_INFO" />
+
+    <TextView
+        android:id="@+id/txt_transaction_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="24dp"
+        android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_transaction_type_id"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="RS:" />
+</androidx.constraintlayout.widget.ConstraintLayout>
